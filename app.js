@@ -11,12 +11,20 @@ app.route({
   schema: {
     response: {
       200: {
-        type: "array",
-        items: {
-          type: "object",
-          properties: {
-            name: { type: "string" },
-            url: { type: "string" },
+        type: "object",
+        properties: {
+          count: { type: "number" },
+          next: { type: "null" },
+          previous: { type: "null" },
+          results: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                name: { type: "string" },
+                url: { type: "string" },
+              },
+            },
           },
         },
       },
