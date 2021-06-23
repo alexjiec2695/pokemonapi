@@ -69,3 +69,9 @@ const start = async () => {
 };
 
 start();
+
+app.listen(3000, "0.0.0.0", (error) => {
+  if (error) {
+    console.error(error);
+  }
+});
