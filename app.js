@@ -37,7 +37,7 @@ app.route({
 
 app.route({
   method: "GET",
-  url: "/api/v2/pokemon/:id",
+  url: "/api/v2/pokemon/:id/",
   schema: {
     params: {
       id: { type: "number" },
